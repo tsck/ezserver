@@ -13,5 +13,3 @@ Kwik-E-Serve is a simple, no frills, command-line http server.
 ```bash
 $ npm install -g kwik-e-serve
 ```
-
-For Documentation, visit http://tsck.github.io/kwik-e-serve/
