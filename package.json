@@ -36,7 +36,7 @@
     "build:umd.min": "webpack --output-filename index.min.js -p",
     "commit": "git-cz",
     "lint": "eslint --ignore-pattern *.test.js src",
-    "watch:test": "npm t -- -w",
+    "watch:test": "npm t -- -w"
   },
   "files": [
     "dist",
