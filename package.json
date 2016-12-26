@@ -1,7 +1,7 @@
 {
   "name": "kwik-e-serve",
-  "description": "Simple command-line HTTP Server",
-  "version": "0.0.0-development",
+  "description": "Simple command-line static file server",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "author": "Terrence Keane",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "mime-types": "2.1.13",
     "npm-run-all": "3.1.2",
     "rimraf": "2.5.4",
-    "semantic-release": "6.3.2",
     "webpack": "1.14.0"
   },
   "scripts": {
@@ -38,7 +37,6 @@
     "commit": "git-cz",
     "lint": "eslint --ignore-pattern *.test.js src",
     "watch:test": "npm t -- -w",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
     "dist",
