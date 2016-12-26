@@ -1,7 +1,7 @@
 {
   "name": "kwik-e-serve",
   "description": "Simple command-line static file server",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/index.js",
   "author": "Terrence Keane",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "lint": "eslint --ignore-pattern *.test.js src"
   },
   "files": [
-    "src",
+    "bin",
     "README.md"
   ],
   "czConfig": {
