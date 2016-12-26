@@ -1,4 +1,4 @@
-let mime    = require('mime-types'),
+var mime    = require('mime-types'),
     http    = require('http'),
     fs      = require('fs'),
     path    = require('path'),
