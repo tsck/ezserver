@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var mime    = require('mime-types'),
     http    = require('http'),
     fs      = require('fs'),
