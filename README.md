@@ -1,4 +1,4 @@
-# Kwik-E-Serve
+# EZServer
 
 [![travis build](https://img.shields.io/travis/tsck/kwik-e-serve.svg)](https://travis-ci.org/tsck/kwik-e-serve)
 [![version](https://img.shields.io/npm/v/kwik-e-serve.svg)](https://www.npmjs.com/package/kwik-e-serve)
