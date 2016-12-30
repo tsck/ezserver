@@ -1,13 +1,13 @@
 {
-  "name": "kwik-e-serve",
+  "name": "ezserver",
   "description": "Simple static server",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "main": "src/index.js",
   "author": "Terrence Keane",
   "license": "MIT",
   "homepage": "https://github.com/tsck/kwik-e-serve#readme",
   "bin": {
-    "kwik-e-serve": "bin/index.js"
+    "ezserver": "bin/index.js"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ const _createServer = require('./createServer');
 // Singleton server instance
 let instance = null;
 
-class Server {
+class EZServer {
   constructor() {
     if (instance === null) {
       instance = _createServer();
@@ -23,4 +23,4 @@ class Server {
   }
 };
 
-module.exports = Server;
+module.exports = EZServer;
