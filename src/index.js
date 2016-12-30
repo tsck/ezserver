@@ -18,9 +18,9 @@ class EZServer {
 
   stop() {
     instance.close(() => {
-      console.log(`Server closed`);
+      console.log('Server closed');
     });
   }
-};
+}
 
 module.exports = EZServer;

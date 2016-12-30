@@ -1,20 +1,17 @@
 {
   "name": "ezserver",
   "description": "Simple static server",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "main": "src/index.js",
   "author": "Terrence Keane",
   "license": "MIT",
-  "homepage": "https://github.com/tsck/kwik-e-serve#readme",
-  "bin": {
-    "ezserver": "bin/index.js"
-  },
+  "homepage": "https://github.com/tsck/ezserver#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tsck/kwik-e-serve.git"
+    "url": "https://github.com/tsck/ezserver.git"
   },
   "bugs": {
-    "url": "https://github.com/tsck/kwik-e-serve/issues"
+    "url": "https://github.com/tsck/ezserver/issues"
   },
   "keywords": [
     "simple",
@@ -32,7 +29,7 @@
     "lint": "eslint --ignore-pattern *.test.js src"
   },
   "files": [
-    "bin",
+    "src",
     "README.md"
   ],
   "czConfig": {
