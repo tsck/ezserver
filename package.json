@@ -1,6 +1,6 @@
 {
   "name": "kwik-e-serve",
-  "description": "Simple command-line static file server",
+  "description": "Simple static server",
   "version": "1.0.7",
   "main": "src/index.js",
   "author": "Terrence Keane",

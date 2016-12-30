@@ -1,41 +1,26 @@
-#!/usr/bin/env node
+const _createServer = require('./createServer');
 
-var mime    = require('mime-types'),
-    http    = require('http'),
-    fs      = require('fs'),
-    path    = require('path'),
-    util    = require('util');
+// Singleton server instance
+let instance = null;
 
-function start() {
-    const PORT = 3000;
+class Server {
+  constructor() {
+    if (instance === null) {
+      instance = _createServer();
+    }
+  }
 
-    http.createServer((req, res) => {
-        let pathUrl = '';
-
-        if (req.url === '/') {
-            pathUrl = path.join(__dirname, 'index.html');
-        } else {
-            pathUrl = path.join(__dirname, req.url);
-        }
-
-        let contentType = mime.lookup(pathUrl);
-    
-        util.log(`${req.method}: ${req.url} (${contentType})`);
-
-        fs.readFile(pathUrl, (err, content) => {
-            if (err) {
-                res.writeHead(500);
-                res.end(`Error: Issue opening requested file: ${err}`);
-            } else {
-                res.writeHead(200, {'Content-Type': contentType});
-                res.end(content, 'utf-8');
-            }
-        });
-    }).listen(PORT, () => {
-        console.log(`Server listening at http:\/\/localhost:${PORT}`);   
+  start(port = 3000) {
+    instance.listen(port, () => {
+      console.log(`Server listening at http://localhost:${port}`);
     });
-}
+  }
 
-start();
+  stop() {
+    instance.close(() => {
+      console.log(`Server closed`);
+    });
+  }
+};
 
-module.exports = start;
+module.exports = Server;
