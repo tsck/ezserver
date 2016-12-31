@@ -1,8 +1,8 @@
 # EZServer
 
-[![travis build](https://img.shields.io/travis/tsck/kwik-e-serve.svg)](https://travis-ci.org/tsck/kwik-e-serve)
-[![version](https://img.shields.io/npm/v/kwik-e-serve.svg)](https://www.npmjs.com/package/kwik-e-serve)
-[![license](https://img.shields.io/github/license/tsck/kwik-e-serve.svg)](https://github.com/tsck/kwik-e-serve/blob/master/LICENSE)
+[![travis build](https://img.shields.io/travis/tsck/ezserver.svg)](https://travis-ci.org/tsck/ezserver)
+[![version](https://img.shields.io/npm/v/ezserver.svg)](https://www.npmjs.com/package/ezserver)
+[![license](https://img.shields.io/github/license/tsck/ezserver.svg)](https://github.com/tsck/ezserver/blob/master/LICENSE)
 
 EZServer is a simple static server.
 
