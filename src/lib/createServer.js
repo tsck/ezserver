@@ -24,7 +24,7 @@ module.exports = function _createServer(rootPath, logging) {
     const contentType = mime.lookup(pathUrl);
 
     if (logging) {
-      console.log('Request: ' + `${req.method}`.red + ' - ' + `${req.url}`.cyan + ` (${contentType})`);
+      console.log(`${req.method}`.red + ' → ' + `${req.url}`.cyan + ` (${contentType})`);
     }
 
     fs.readFile(pathUrl, (err, content) => {
