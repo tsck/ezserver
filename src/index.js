@@ -1,18 +1,25 @@
-const _createServer = require('./createServer');
+// Allows for colored logginng
+require('colors');
+
+const _createServer = require('./lib/createServer');
 
 // Singleton server instance
 let instance = null;
 
 class EZServer {
-  constructor() {
+  constructor(rootPath = './', logging = true) {
+    this.rootPath = rootPath;
+    this.logging = logging;
     if (instance === null) {
-      instance = _createServer();
+      instance = _createServer(this.rootPath, this.logging);
     }
   }
 
   start(port = 3000) {
     instance.listen(port, () => {
-      console.log(`Server listening at http://localhost:${port}`);
+      if (this.logging) {
+        console.log('Serving ' + this.rootPath.cyan + ' directory @ ' + `http://localhost:${port}`.cyan);
+      }
     });
   }
 
