@@ -1,6 +1,6 @@
 # EZServer
 
-[![travis build](https://img.shields.io/travis/tsck/EZServer.svg)](https://travis-ci.org/tsck/EZServer)
+[![travis build](https://img.shields.io/travis/tsck/ezserver.svg)](https://travis-ci.org/tsck/ezserver)
 [![version](https://img.shields.io/npm/v/ezserver.svg)](https://www.npmjs.com/package/ezserver)
 [![license](https://img.shields.io/github/license/tsck/ezserver.svg)](https://github.com/tsck/ezserver/blob/master/LICENSE)
 
